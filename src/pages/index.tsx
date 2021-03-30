@@ -1,22 +1,26 @@
-import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../../styles/Home.module.css';
 
 type Props = {
-  title: string
-}
+  title: string;
+};
+
+// const a = (b: boolean) => {
+//   return b + 'ar';
+// };
+
+// const b = { foo: 'bar' };
 
 export default function Home({ title = 'React Avançado' }: Props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{ title }</title>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          { title }
-        </h1>
+        <h1 className={styles.title}>{title}</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
@@ -65,5 +69,5 @@ export default function Home({ title = 'React Avançado' }: Props) {
         </a>
       </footer>
     </div>
-  )
+  );
 }
