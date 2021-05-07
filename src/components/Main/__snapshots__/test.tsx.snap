@@ -12,19 +12,19 @@ exports[`<Main /> should render the heading 1`] = `
   class="c0"
 >
   <img
-    alt="Imagem de um átomo e React Avançado escrito ao lado."
+    alt="Boilerplate Logo"
     class="styles__Logo-sc-1cs6c8-1"
     src=""
   />
   <h1
     class="styles__Title-sc-1cs6c8-2"
   >
-    React avançado
+    Boilerplate NextJS
   </h1>
   <h2
     class="styles__Description-sc-1cs6c8-3"
   >
-    TypeScript, ReactJS, NextJS e Styled Components
+    TypeScript, ReactJS, NextJS and Styled Components
   </h2>
   <img
     class="styles__Illustration-sc-1cs6c8-4"
