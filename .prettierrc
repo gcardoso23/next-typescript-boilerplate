@@ -2,8 +2,7 @@
   "trailingComma": "none",
   "singleQuote": true,
   "arrowParens": "avoid",
-  "endOfLine": "auto",
-  "semicolons": true,
+  "endOfLine": "lf",
   "bracketSpacing": true,
   "printWidth": 120
 }
