@@ -1,22 +1,26 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.main`
-  align-items: center;
-  background-color: #06082b;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
+  ${({ theme }) => css`
+    align-items: center;
+    background-color: ${theme.colors.background};
+    color: ${theme.colors.text};
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  `}
 `;
 
 export const Logo = styled.img``;
 
 // Fluid sizes grow with the viewport but start from the user's own font size.
 export const Title = styled.h1`
-  font-size: clamp(2.5rem, 1.5rem + 3vw, 4rem);
-  margin-bottom: 1rem;
+  ${({ theme }) => css`
+    font-size: clamp(2.5rem, 1.5rem + 3vw, 4rem);
+    margin-bottom: ${theme.spacings.small};
+  `}
 `;
 
 export const Description = styled.h2`

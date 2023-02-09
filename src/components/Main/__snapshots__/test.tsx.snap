@@ -7,7 +7,7 @@ exports[`<Main /> should render the heading 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: #06082b;
-  color: #fff;
+  color: #fafafa;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
