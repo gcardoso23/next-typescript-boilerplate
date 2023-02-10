@@ -1,9 +1,14 @@
-import { Story, Meta } from '@storybook/react';
-import Main from '.';
+import { Meta, Story } from '@storybook/react';
+
+import Main, { MainProps } from '.';
 
 export default {
   title: 'Main',
-  component: Main
-} as Meta;
+  component: Main,
+  args: {
+    title: 'Boilerplate NextJS',
+    description: 'TypeScript, ReactJS, NextJS and Styled Components'
+  }
+} as Meta<MainProps>;
 
-export const Basic: Story = args => <Main {...args} />;
+export const Basic: Story<MainProps> = args => <Main {...args} />;

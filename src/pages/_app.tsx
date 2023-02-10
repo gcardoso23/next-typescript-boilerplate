@@ -10,6 +10,7 @@ function App({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <Head>
         <title>NextJS Boilerplate</title>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta
           name="description"
           content="A simple project starter to work with TS, React, NextJS and Styled components"
