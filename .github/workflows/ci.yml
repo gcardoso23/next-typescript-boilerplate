@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  ci:
+    name: Lint, type-check, test and build
+    runs-on: ubuntu-latest
+    env:
+      HUSKY: 0
+      NEXT_TELEMETRY_DISABLED: 1
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn lint
+      - run: yarn type-check
+      - run: yarn format:check
+      - run: yarn test --ci
+      - run: yarn build
